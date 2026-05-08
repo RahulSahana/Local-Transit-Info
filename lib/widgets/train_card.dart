@@ -24,14 +24,14 @@ class TrainCard extends StatelessWidget {
           color: isRunning
               ? AppTheme.upDirectionColor.withValues(alpha: isDark ? 0.12 : 0.06)
               : isDark
-                  ? const Color(0xFF1e293b)
+                  ? const Color(0xFF2D2421)
                   : Colors.white,
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
             color: isRunning
                 ? AppTheme.upDirectionColor.withValues(alpha: 0.4)
                 : isDark
-                    ? const Color(0xFF334155)
+                    ? const Color(0xFF3E332F)
                     : const Color(0xFFe2e8f0),
             width: isRunning ? 1.5 : 1,
           ),

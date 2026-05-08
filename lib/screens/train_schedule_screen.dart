@@ -137,18 +137,18 @@ class _TrainScheduleScreenState extends State<TrainScheduleScreen> {
                     )
                   : null,
               filled: true,
-              fillColor: isDark ? const Color(0xFF1e293b) : Colors.white,
+              fillColor: isDark ? const Color(0xFF2D2421) : Colors.white,
               contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide(
-                  color: isDark ? const Color(0xFF334155) : const Color(0xFFe2e8f0),
+                  color: isDark ? const Color(0xFF3E332F) : const Color(0xFFe2e8f0),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide(
-                  color: isDark ? const Color(0xFF334155) : const Color(0xFFe2e8f0),
+                  color: isDark ? const Color(0xFF3E332F) : const Color(0xFFe2e8f0),
                 ),
               ),
               focusedBorder: OutlineInputBorder(
@@ -182,7 +182,7 @@ class _TrainScheduleScreenState extends State<TrainScheduleScreen> {
               const SizedBox(width: 10),
               const _LegendDot(color: Color(0xFF64748b), label: 'Reached'),
               const SizedBox(width: 10),
-              const _LegendDot(color: Color(0xFF3b82f6), label: 'Scheduled'),
+              const _LegendDot(color: Color(0xFF795548), label: 'Scheduled'),
             ],
           ),
         ),

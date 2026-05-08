@@ -15,7 +15,7 @@ void showTrainDetails(BuildContext context, Train train) {
     backgroundColor: Colors.transparent,
     builder: (ctx) => Container(
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1e293b) : Colors.white,
+        color: isDark ? const Color(0xFF2D2421) : Colors.white,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
       ),
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 32),
@@ -29,7 +29,7 @@ void showTrainDetails(BuildContext context, Train train) {
               width: 40,
               height: 4,
               decoration: BoxDecoration(
-                color: isDark ? const Color(0xFF475569) : const Color(0xFFcbd5e1),
+                color: isDark ? const Color(0xFF5D4037) : const Color(0xFFcbd5e1),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -39,14 +39,23 @@ void showTrainDetails(BuildContext context, Train train) {
           // Header
           Row(
             children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: dirColor.withValues(alpha: 0.15),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Icon(Icons.train_rounded, color: dirColor, size: 26),
+            Container(
+              padding: const EdgeInsets.all(2),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: dirColor.withValues(alpha: 0.3)),
               ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: Image.asset(
+                  'lib/assets/logo.jpg',
+                  width: 42,
+                  height: 42,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
               const SizedBox(width: 14),
               Expanded(
                 child: Column(
@@ -98,7 +107,7 @@ void showTrainDetails(BuildContext context, Train train) {
           ),
 
           const SizedBox(height: 20),
-          Divider(color: isDark ? const Color(0xFF334155) : const Color(0xFFe2e8f0)),
+          Divider(color: isDark ? const Color(0xFF3E332F) : const Color(0xFFe2e8f0)),
           const SizedBox(height: 16),
 
           // Time info
@@ -166,7 +175,7 @@ void showTrainDetails(BuildContext context, Train train) {
             child: TextButton(
               onPressed: () => Navigator.pop(ctx),
               style: TextButton.styleFrom(
-                backgroundColor: isDark ? const Color(0xFF334155) : const Color(0xFFf1f5f9),
+                backgroundColor: isDark ? const Color(0xFF3E332F) : const Color(0xFFf1f5f9),
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
               ),
@@ -206,10 +215,10 @@ class _InfoTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF0f172a) : const Color(0xFFf8fafc),
+        color: isDark ? const Color(0xFF1B1514) : const Color(0xFFf8fafc),
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: isDark ? const Color(0xFF334155) : const Color(0xFFe2e8f0),
+          color: isDark ? const Color(0xFF3E332F) : const Color(0xFFe2e8f0),
         ),
       ),
       child: Column(
@@ -258,10 +267,10 @@ Widget _durationTile(BuildContext context, Train train, Color color, bool isDark
     width: double.infinity,
     padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
     decoration: BoxDecoration(
-      color: isDark ? const Color(0xFF0f172a) : const Color(0xFFf8fafc),
+      color: isDark ? const Color(0xFF1B1514) : const Color(0xFFf8fafc),
       borderRadius: BorderRadius.circular(10),
       border: Border.all(
-        color: isDark ? const Color(0xFF334155) : const Color(0xFFe2e8f0),
+        color: isDark ? const Color(0xFF3E332F) : const Color(0xFFe2e8f0),
       ),
     ),
     child: Row(

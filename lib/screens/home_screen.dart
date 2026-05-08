@@ -101,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   Widget _buildHeader(bool isDark) {
     return Container(
-      color: isDark ? const Color(0xFF1e293b) : const Color(0xFF1a365d),
+      color: isDark ? const Color(0xFF2D2421) : const Color(0xFF3E2723),
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
       child: Row(
         children: [
@@ -112,11 +112,13 @@ class _HomeScreenState extends State<HomeScreen>
                 width: 38,
                 height: 38,
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.15),
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
+                  image: const DecorationImage(
+                    image: AssetImage('lib/assets/logo.jpg'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
-                child: const Icon(Icons.train_rounded,
-                    color: Colors.white, size: 22),
               ),
               const SizedBox(width: 10),
               Column(
@@ -208,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   Widget _buildTabBar(bool isDark, int noticeCount) {
     return Container(
-      color: isDark ? const Color(0xFF1e293b) : const Color(0xFF1a365d),
+      color: isDark ? const Color(0xFF2D2421) : const Color(0xFF3E2723),
       child: TabBar(
         controller: _tabController,
         indicatorColor: const Color(0xFFe8b84b),

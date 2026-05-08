@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  static const Color _primaryBlue = Color(0xFF1a365d);
+  static const Color _primaryBrown = Color(0xFF3E2723);
   static const Color _accentGold = Color(0xFFe8b84b);
   static const Color _runningGreen = Color(0xFF22c55e);
   static const Color _reachedGray = Color(0xFF64748b);
@@ -14,15 +14,15 @@ class AppTheme {
     useMaterial3: true,
     brightness: Brightness.light,
     colorScheme: const ColorScheme.light(
-      primary: _primaryBlue,
+      primary: _primaryBrown,
       secondary: _accentGold,
-      surface: Color(0xFFf8fafc),
-      surfaceContainerHighest: Color(0xFFe2e8f0),
+      surface: Color(0xFFfdfaf9),
+      surfaceContainerHighest: Color(0xFFefebe9),
     ),
     textTheme: GoogleFonts.sourceCodeProTextTheme(),
-    scaffoldBackgroundColor: const Color(0xFFf1f5f9),
+    scaffoldBackgroundColor: const Color(0xFFf5f5f5),
     appBarTheme: AppBarTheme(
-      backgroundColor: _primaryBlue,
+      backgroundColor: _primaryBrown,
       foregroundColor: Colors.white,
       elevation: 0,
       titleTextStyle: GoogleFonts.oswald(
@@ -43,15 +43,15 @@ class AppTheme {
     useMaterial3: true,
     brightness: Brightness.dark,
     colorScheme: const ColorScheme.dark(
-      primary: Color(0xFF3b82f6),
+      primary: Color(0xFF8D6E63),
       secondary: _accentGold,
-      surface: Color(0xFF1e293b),
-      surfaceContainerHighest: Color(0xFF334155),
+      surface: Color(0xFF2D2421),
+      surfaceContainerHighest: Color(0xFF3E332F),
     ),
     textTheme: GoogleFonts.sourceCodeProTextTheme(ThemeData.dark().textTheme),
-    scaffoldBackgroundColor: const Color(0xFF0f172a),
+    scaffoldBackgroundColor: const Color(0xFF1B1514),
     appBarTheme: AppBarTheme(
-      backgroundColor: const Color(0xFF1e293b),
+      backgroundColor: const Color(0xFF2D2421),
       foregroundColor: Colors.white,
       elevation: 0,
       titleTextStyle: GoogleFonts.oswald(
@@ -62,7 +62,7 @@ class AppTheme {
       ),
     ),
     cardTheme: CardThemeData(
-      color: const Color(0xFF1e293b),
+      color: const Color(0xFF2D2421),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
     ),
@@ -75,7 +75,7 @@ class AppTheme {
       case 'cancelled': return _cancelledRed;
       case 'shortTerminate': return _shortTerminateOrange;
       case 'shortOrigin': return _shortOriginPurple;
-      default: return const Color(0xFF3b82f6);
+      default: return const Color(0xFF795548);
     }
   }
 
